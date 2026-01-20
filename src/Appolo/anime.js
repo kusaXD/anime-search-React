@@ -2,13 +2,13 @@ import { gql } from "@apollo/client";
 
 export const ANIME = gql`
   query SearchAnime($search: String) {
-    Page(page: 1, perPage: 10) {
+    Page(page: 1, perPage: 1) {
       media(search: $search, type: ANIME) {
         id
         title {
           english
         }
-        description
+        description(asHtml: false)
         episodes
         averageScore
         coverImage {
