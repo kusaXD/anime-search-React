@@ -1,14 +1,14 @@
 import { gql } from "@apollo/client";
 
 export const ANIME = gql`
-  query SearchAnime($search: String) {
-    Page(page: 1, perPage: 1) {
+  query SearchAnime($search: String, $page: Int = 1, $perPage: Int = 10) {
+    Page(page: $page, perPage: $perPage) {
       media(search: $search, type: ANIME) {
         id
         title {
           english
         }
-        description(asHtml: false)
+        description(asHtml: true)
         episodes
         averageScore
         coverImage {
@@ -26,6 +26,9 @@ export const ANIME = gql`
           month
           year
         }
+        favourites
+        popularity
+        type
       }
     }
   }
