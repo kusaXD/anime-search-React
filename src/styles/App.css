@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #1c202c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type="file"] {
+  max-width: 100%;
+}
+/**/
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  margin-top: 100px;
+}
+
+.App h1 {
+  text-align: center;
+  width: 1000px;
+  font-size: 50px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to left, #5925b9, #9900ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+
+.Myform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animeList {
+  width: 1000px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.animeCard {
+}
+
+.animeHeader {
+}
+.animeDescription {
+}
+.animeStats {
+}

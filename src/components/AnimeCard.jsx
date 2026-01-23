@@ -5,7 +5,7 @@ import AnimeStats from "./AnimeStats";
 
 function AnimeCard({ animeInfo }) {
   return (
-    <div>
+    <div className="animeCard">
       <AnimeHeader
         name={animeInfo.title.english}
         img={animeInfo.coverImage.large}

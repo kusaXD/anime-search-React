@@ -2,7 +2,7 @@ import React from "react";
 
 function AnimeDescription({ description }) {
   return (
-    <div>
+    <div className="animeDescription">
       <h3>description</h3>
       <p dangerouslySetInnerHTML={{ __html: description }}></p>
     </div>

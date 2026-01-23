@@ -3,11 +3,13 @@ import { useQuery } from "@apollo/client/react";
 import { ANIME } from "./Appolo/anime";
 import SearchForm from "./components/SearchForm";
 import AnimeList from "./components/AnimeList";
+import "./styles/App.css";
 
 function App() {
   const [value, setValue] = useState("");
   const { loading, error, data } = useQuery(ANIME, {
     variables: {
+      mode: "no-cors",
       search: value,
       page: 1,
       perPage: 1,

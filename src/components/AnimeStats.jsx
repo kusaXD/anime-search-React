@@ -9,7 +9,7 @@ function AnimeStats({
   popularity,
 }) {
   return (
-    <div>
+    <div className="animeStats">
       <p>Episodes: {episodes}</p>
       <p>Score: {score}</p>
       <p>Genres: {genres.join(", ")}</p>

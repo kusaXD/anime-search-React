@@ -7,7 +7,7 @@ function AnimeList({ data }) {
       {data && data.Page && (
         <div>
           {data.Page.media.map((anime) => (
-            <div>
+            <div className="animeList">
               <AnimeCard animeInfo={anime} />
             </div>
           ))}
