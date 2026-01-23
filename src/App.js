@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useQuery } from "@apollo/client/react";
 import { ANIME } from "./Appolo/anime";
-import client from "./Appolo/client";
 import SearchForm from "./components/SearchForm";
 import AnimeInfo from "./components/AnimeInfo";
 
@@ -11,7 +10,7 @@ function App() {
     variables: {
       search: value,
       page: 1,
-      perPage: 10,
+      perPage: 1,
     },
   });
 
