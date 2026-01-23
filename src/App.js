@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useQuery } from "@apollo/client/react";
 import { ANIME } from "./Appolo/anime";
 import SearchForm from "./components/SearchForm";
-import AnimeInfo from "./components/AnimeInfo";
+import AnimeList from "./components/AnimeList";
 
 function App() {
   const [value, setValue] = useState("");
@@ -21,7 +21,7 @@ function App() {
 
       {loading && <p>loading...</p>}
       {error && <p>error: {error.message}</p>}
-      <AnimeInfo data={data} />
+      <AnimeList data={data} />
     </div>
   );
 }
