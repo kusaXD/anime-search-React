@@ -16,15 +16,11 @@ A web application for getting information about any anime
    ```
 2. Go to the project directory:
    ```bash
-   cd repository name
+   cd repository anime_search
    ```
 3. Install the dependencies:
    `bash
-npm install
-    # or
-pip install -r requirements.txt
-`
-
+npm install graphql @apollo/client
 ### Launch
 
 ```bash
