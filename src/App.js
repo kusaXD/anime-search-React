@@ -14,8 +14,30 @@ function App() {
       <h1>Anime Search</h1>
       <SearchForm value={value} setValue={setValue} getAnime={getAnime} />
 
-      {loading && <p>loading...</p>}
-      {error && <p>error: {error.message}</p>}
+      {loading && (
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "30px",
+            fontSize: "30px",
+            color: "white",
+          }}
+        >
+          loading...
+        </p>
+      )}
+      {error && (
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "30px",
+            fontSize: "30px",
+            color: "red",
+          }}
+        >
+          error: {error.message}
+        </p>
+      )}
       <AnimeList data={data} />
     </div>
   );

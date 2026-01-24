@@ -1,11 +1,32 @@
-# Getting Started with Create React App
+# Anime searcch
 
-In the project directory, you can run:
+A web application for getting information about any anime
 
-### `npm start`
+## 📦 Installation and launch
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Preliminary requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js ](https://nodejs.org /)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kusaXD/anime-search-React.git
+   ```
+2. Go to the project directory:
+   ```bash
+   cd repository name
+   ```
+3. Install the dependencies:
+   `bash
+npm install
+    # or
+pip install -r requirements.txt
+`
+
+### Launch
+
+```bash
+npm start
+```
