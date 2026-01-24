@@ -5,7 +5,6 @@
   margin: 0px;
   border: none;
   font-family: "Poppins", sans-serif;
-  background-color: #1c202c;
 }
 
 *,
@@ -113,6 +112,10 @@ input[type="file"] {
   justify-content: center;
 }
 
+body {
+  background-color: #1c202c;
+}
+
 .App {
   margin-top: 100px;
 }
@@ -136,17 +139,69 @@ input[type="file"] {
 }
 
 .animeList {
+  margin-top: 30px;
   width: 1000px;
-  background-color: #fff;
   border-radius: 15px;
+  background-color: #3a4669;
+  overflow: hidden;
 }
 
 .animeCard {
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
 }
 
 .animeHeader {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 300px;
+  background-color: #2a344f;
 }
+
+.animeHeader img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
 .animeDescription {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
+.animeDescription > span:first-of-type {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.animeDescription > span:nth-of-type(2) {
+  font-size: 18px;
+  color: #c0c6d8;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
 .animeStats {
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.animeStats p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #b0b7d0;
 }

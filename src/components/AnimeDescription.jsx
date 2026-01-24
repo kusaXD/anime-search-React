@@ -1,10 +1,25 @@
 import React from "react";
+import AnimeStats from "./AnimeStats";
 
-function AnimeDescription({ description }) {
+function AnimeDescription({
+  description,
+  episodes,
+  score,
+  genres,
+  favourites,
+  popularity,
+}) {
   return (
     <div className="animeDescription">
-      <h3>description</h3>
-      <p dangerouslySetInnerHTML={{ __html: description }}></p>
+      <span>description</span>
+      <span dangerouslySetInnerHTML={{ __html: description }}></span>
+      <AnimeStats
+        episodes={episodes}
+        score={score}
+        genres={genres}
+        favourites={favourites}
+        popularity={popularity}
+      />
     </div>
   );
 }
