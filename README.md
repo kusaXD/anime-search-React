@@ -16,7 +16,7 @@ A web application for getting information about any anime
    ```
 2. Go to the project directory:
    ```bash
-   cd repository anime_search
+   cd [your_repository] anime_search
    ```
 3. Install the dependencies:
    `bash
