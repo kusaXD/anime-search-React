@@ -1,4 +1,4 @@
-# Anime searcch
+# Anime search
 
 A web application for getting information about any anime
 
