@@ -19,8 +19,9 @@ A web application for getting information about any anime
    cd [your_repository] anime_search
    ```
 3. Install the dependencies:
-   `bash
-npm install graphql @apollo/client
+   ```bash
+   npm install graphql @apollo/client
+   ```
 ### Launch
 
 ```bash
