@@ -4,10 +4,6 @@ A web application for getting information about any anime
 
 ## 📦 Installation and launch
 
-### Preliminary requirements
-
-- [Node.js ](https://nodejs.org /)
-
 ### Installation
 
 1. Clone the repository:
